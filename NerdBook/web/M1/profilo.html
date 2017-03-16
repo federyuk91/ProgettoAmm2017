@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content ="Nerdbook, profilo">
+        <meta name="description" content ="Sezione personale di NerBook">
+        <meta name="author" content="Federico Bachis">
+    </head>
+    <body>
+        <div>
+            <h1>Nuovo profilo</h1>
+            <form action="profilo.html" method="post">
+                <label for="Nome">Nome Utente</label>
+                <input type="text" id="Nome">
+                <label for="Cognome">Cognome</label>
+                <input type="text" id="Cognome">
+                <label for="ImgProfilo">Link Foto Profilo</label>
+                <input type="url" id="ImgProfilo">
+                <label for="Stato">Frase di presentazione</label>
+                <input type="text" id="Stato">
+                <label for="Giorno">gg</label>
+                <input type="number" id="Giorno">
+                <label for="Mese">mm</label>
+                <input type="number" id="Mese">
+                <label for="Anno">aaaa</label>
+                <input type="number" id="Anno">
+            
+                <label for="Password">Password</label>
+                <input type="password" id="Password">
+                <label for="Password2">Conferma Password</label>
+                <input type="password" id="Password2">
+                
+                <input type="submit" name="submit" value="Invia informazioni"/>
+            </form>
+            
+            <div id="navigazione">
+                <h2>Navigazione</h2>
+                <a href="descrizione.html">Descrizione</a>
+                <a href="login.html">login</a>
+                <a href="bacheca.html">bacheca</a>
+            </div>
+</div>
+    </body>
+</html>
