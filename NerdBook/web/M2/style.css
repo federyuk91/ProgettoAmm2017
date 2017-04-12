@@ -3,12 +3,54 @@ body{
     color: gray;
     font-family: "Times New Roman" , arial, serif, santserif;
 }
+
+#title{
+    background-image: url("nerdy_logo.png");
+    background-repeat: no-repeat;
+    background-size: 54px;
+    background-position: left;
+    padding-left: 54px;
+}
+
+
+.post{
+    border: solid;
+    padding: 25px;
+}
+.profilo{
+    padding: 10px;
+    height: 50px;
+}
+
+label{
+    display: block;
+}
+input{
+    display: block;
+}
+img{
+    display: block;
+}
+
+#Login{
+    position: absolute;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    top: 5%;
+    left: 25%;
+    width: 200px;
+    border: solid;
+}
+@media only screen and (min-width: 1024px){
 #Header{
     
     padding: 5px;
     width: 100%;
     float: left;
 }
+
 #Titolo{
     
     border: solid;
@@ -33,7 +75,7 @@ body{
 }
 #Navigazione h2{
     float: right;
-    padding-left: 10px;
+    padding-right: 10px;
 }
 #Sx_Col{
     border: solid;
@@ -63,35 +105,6 @@ body{
     float: left;
     width: 75%;
 }
-#Login{
-    position: absolute;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    top: 5%;
-    left: 50%;
-    width: 200px;
-    border: solid;
-}
-#title{
-    background-image: url("nerdy_logo.png");
-    background-repeat: no-repeat;
-    background-size: 54px;
-    background-position: left;
-    padding-left: 54px;
-}
-#accounts{
-        margin: 40% 0 0 40%;
-}
-.post{
-    border: solid;
-    padding: 25px;
-}
-.profilo{
-    padding: 10px;
-    height: 50px;
-}
 .stato{}
 .pImage{
     margin-right: 20px;
@@ -101,9 +114,123 @@ body{
 }
 div{
 }
-label{
-    display: block;
 }
-input{
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+#Header{
+    
+    padding: 5px;
+    width: 100%;
+    float: left;
+}
+
+#Titolo{
+    
+    background-image: url("nerdy_logo.png");
+    background-repeat: no-repeat;
+    background-size: 54px;
+    background-position: left;
+    border: solid;
+    width: 15%;
+    float: left;
+}
+
+#Navigazione{
+    
+    border: solid;
+    border-collapse: collapse;
+    width: 80%;
+    float: left;
+}
+#title{
+    visibility: hidden;
+    padding-left: 54px;
+}
+
+#Navigazione h1{
+    float: left;
+    padding-left: 10px;
+}
+#Navigazione h1:hover{
+    background-color: whitesmoke;
+}
+#Navigazione h2{
+    font-size: 15px;
+    float: right;
+    padding-right: 10px;
+}
+#Sx_Col{
+    border: solid;
+    padding: 5px;
+    float: left;
+    width: 205px;
+}
+#Sx_Col a {
     display: block;
+    padding-left: 25px;
+    background-image: url("prof.gif");
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-size: auto 100%;
+    text-decoration: none;
+    
+}
+#groups{
+    
+    background-image: url("boh.gif");
+    background-repeat: no-repeat;
+    background-position: right; 
+    background-size: auto 100%;
+}
+#Dx_Col{
+    border: solid;
+    float: left;
+    width: 60%;
+}
+.stato{}
+.pImage{
+    margin-right: 20px;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+div{
+}    
+}
+@media only screen and (max-width: 480px){
+#Header{    
+    padding: 5px;
+}
+
+#Titolo{
+    border: solid;
+}
+#Navigazione{    
+    border: solid;
+    border-collapse: collapse;
+}
+
+#Navigazione h1{
+    padding-left: 10px;
+}
+#Navigazione h1:hover{
+    background-color: whitesmoke;
+}
+#Navigazione h2{
+    padding-left: 10px;
+}
+#Sx_Col{
+    display: none;
+}
+#Dx_Col{
+    border: solid;
+    float: left;
+    width: 100%;
+}
+.stato{}
+.pImage{
+    margin-right: 5px;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
 }
