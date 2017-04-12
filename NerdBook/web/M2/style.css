@@ -1,0 +1,109 @@
+body{
+    background-color: #bdff90;
+    color: gray;
+    font-family: "Times New Roman" , arial, serif, santserif;
+}
+#Header{
+    
+    padding: 5px;
+    width: 100%;
+    float: left;
+}
+#Titolo{
+    
+    border: solid;
+    width: 20%;
+    float: left;
+}
+#Navigazione{
+    
+    border: solid;
+    border-collapse: collapse;
+    width: 75%;
+    float: left;
+}
+
+#Navigazione h1{
+    
+    float: left;
+    padding-left: 10px;
+}
+#Navigazione h1:hover{
+    background-color: whitesmoke;
+}
+#Navigazione h2{
+    float: right;
+    padding-left: 10px;
+}
+#Sx_Col{
+    border: solid;
+    padding: 5px;
+    float: left;
+    width: 20%;
+}
+#Sx_Col a {
+    display: block;
+    padding-left: 25px;
+    background-image: url("prof.gif");
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-size: auto 100%;
+    text-decoration: none;
+    
+}
+#groups{
+    
+    background-image: url("boh.gif");
+    background-repeat: no-repeat;
+    background-position: right; 
+    background-size: auto 100%;
+}
+#Dx_Col{
+    border: solid;
+    float: left;
+    width: 75%;
+}
+#Login{
+    position: absolute;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    top: 5%;
+    left: 50%;
+    width: 200px;
+    border: solid;
+}
+#title{
+    background-image: url("nerdy_logo.png");
+    background-repeat: no-repeat;
+    background-size: 54px;
+    background-position: left;
+    padding-left: 54px;
+}
+#accounts{
+        margin: 40% 0 0 40%;
+}
+.post{
+    border: solid;
+    padding: 25px;
+}
+.profilo{
+    padding: 10px;
+    height: 50px;
+}
+.stato{}
+.pImage{
+    margin-right: 20px;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+div{
+}
+label{
+    display: block;
+}
+input{
+    display: block;
+}
