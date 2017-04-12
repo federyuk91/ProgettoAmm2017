@@ -1,3 +1,4 @@
+
 body{
     background-color: #bdff90;
     color: gray;
@@ -27,6 +28,10 @@ label{
 }
 input{
     display: block;
+}
+input:focus{
+    display: block;
+    background-color: yellow;
 }
 img{
     display: block;
