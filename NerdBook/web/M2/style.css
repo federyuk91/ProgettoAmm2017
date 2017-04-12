@@ -1,6 +1,6 @@
 
 body{
-    background-color: #bdff90;
+    background-color: #e6ffcc;
     color: gray;
     font-family: "Times New Roman" , arial, serif, santserif;
 }
@@ -16,7 +16,12 @@ body{
 
 .post{
     border: solid;
+    border-color: white;
     padding: 25px;
+}
+
+.stato{
+    background-color: #ffffe6;
 }
 .profilo{
     padding: 10px;
@@ -31,7 +36,7 @@ input{
 }
 input:focus{
     display: block;
-    background-color: yellow;
+    background-color: #ffffcc;
 }
 img{
     display: block;
@@ -59,12 +64,13 @@ img{
 #Titolo{
     
     border: solid;
+    border-color: white;
     width: 20%;
     float: left;
 }
 #Navigazione{
-    
     border: solid;
+    border-color: white;
     border-collapse: collapse;
     width: 75%;
     float: left;
@@ -76,7 +82,7 @@ img{
     padding-left: 10px;
 }
 #Navigazione h1:hover{
-    background-color: whitesmoke;
+    background-color: #ffffe6;
 }
 #Navigazione h2{
     float: right;
@@ -84,6 +90,7 @@ img{
 }
 #Sx_Col{
     border: solid;
+    border-color: white;
     padding: 5px;
     float: left;
     width: 20%;
@@ -106,11 +113,12 @@ img{
     background-size: auto 100%;
 }
 #Dx_Col{
-    border: solid;
     float: left;
     width: 75%;
 }
-.stato{}
+.stato{
+    
+}
 .pImage{
     margin-right: 20px;
     float: left;
@@ -135,6 +143,7 @@ div{
     background-size: 54px;
     background-position: left;
     border: solid;
+    border-color: white;
     width: 15%;
     float: left;
 }
@@ -142,6 +151,7 @@ div{
 #Navigazione{
     
     border: solid;
+    border-color: white;
     border-collapse: collapse;
     width: 80%;
     float: left;
@@ -156,7 +166,7 @@ div{
     padding-left: 10px;
 }
 #Navigazione h1:hover{
-    background-color: whitesmoke;
+    background-color: #ffffe6;
 }
 #Navigazione h2{
     font-size: 15px;
@@ -164,7 +174,9 @@ div{
     padding-right: 10px;
 }
 #Sx_Col{
+    
     border: solid;
+    border-color: white;
     padding: 5px;
     float: left;
     width: 205px;
@@ -187,11 +199,12 @@ div{
     background-size: auto 100%;
 }
 #Dx_Col{
+    
     border: solid;
+    border-color: white;
     float: left;
     width: 60%;
 }
-.stato{}
 .pImage{
     margin-right: 20px;
     float: left;
@@ -208,9 +221,11 @@ div{
 
 #Titolo{
     border: solid;
+    border-color: white;
 }
 #Navigazione{    
     border: solid;
+    border-color: white;
     border-collapse: collapse;
 }
 
@@ -218,7 +233,7 @@ div{
     padding-left: 10px;
 }
 #Navigazione h1:hover{
-    background-color: whitesmoke;
+    background-color: #ffffe6;
 }
 #Navigazione h2{
     padding-left: 10px;
@@ -228,6 +243,7 @@ div{
 }
 #Dx_Col{
     border: solid;
+    border-color: white;
     float: left;
     width: 100%;
 }
