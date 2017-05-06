@@ -9,6 +9,8 @@ import amm.nerdbook.Classi.Utente;
 import amm.nerdbook.Classi.UtenteFactory;
 import amm.nerdbook.Classi.Post;
 import amm.nerdbook.Classi.PostFactory;
+import amm.nerdbook.Classi.Gruppi;
+import amm.nerdbook.Classi.GruppiFactory;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -59,22 +61,20 @@ public class Bacheca extends HttpServlet {
 
             Utente utente = UtenteFactory.getInstance().getUtenteById(userID);
             if (utente != null) {
-                request.setAttribute("utente", utente);
-                
-                List<Utente> users = UtenteFactory.getInstance().getList();
+                List<Utente> amici = UtenteFactory.getInstance().getList();
+                List<Gruppi> gruppi = GruppiFactory.getInstance().getList();
                 List<Post> posts = PostFactory.getInstance().getPostList(utente);
-                request.setAttribute("posts", posts);
-                request.setAttribute("users", users);
                 
-                if (utente.getCognome()!= null && utente.getUrlFotoProfilo() != null && utente.getPresentazione()!= null) {
-                    String pagina = "bacheca";
-                    String attenzione = "ok";
-                    request.setAttribute("attenzione", attenzione);
+                request.setAttribute("utente", utente);
+                request.setAttribute("amici",amici);
+                request.setAttribute("gruppi",gruppi);
+                request.setAttribute("posts", posts);
+                
+                if (utente.isComplete()) {
+                    String pagina = "post";
                     request.setAttribute("pagina", pagina);
                 } else {
-                    String pagina = "profilo";
-                    String attenzione = "completa profilo";
-                    request.setAttribute("attenzione", attenzione);
+                    String pagina = "modifica";
                     request.setAttribute("pagina", pagina);
                 }
                 request.getRequestDispatcher("bacheca.jsp").forward(request, response);

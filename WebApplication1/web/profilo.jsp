@@ -14,7 +14,7 @@
     Altre info:
     <ol>
         <li>Nome :  ${utente.nome}</li>
-        <li>Cognome : ${utente.getCognome()}</li>
+        <li>Cognome : ${utente.cognome}</li>
         <li>E-mail: ${utente.email}    </li>
     </ol>
 </article>

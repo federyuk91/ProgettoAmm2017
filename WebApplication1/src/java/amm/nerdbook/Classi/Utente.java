@@ -16,12 +16,12 @@ public class Utente {
     private String urlFotoProfilo;
 
     public Utente() {
-        id = 0;
-        nome = "";
+        id = -1;
+        nome = null;
         cognome = null;
         presentazione = null;
-        email = "";
-        password = "";
+        email = null;
+        password = null;
     }
 
     /**
@@ -115,5 +115,20 @@ public class Utente {
      */
     public void setUrlFotoProfilo(String urlFotoProfilo) {
         this.urlFotoProfilo = urlFotoProfilo;
+    }
+    public boolean isComplete(){
+        if(this.nome==null){
+            return false;
+        }
+        if(this.cognome==null){
+            return false;
+        }
+        if(this.presentazione==null){
+            return false;
+        }
+        if(this.urlFotoProfilo==null){
+            return false;
+        }
+        return true;
     }
 }

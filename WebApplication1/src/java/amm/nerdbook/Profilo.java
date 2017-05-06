@@ -5,6 +5,8 @@
  */
 package amm.nerdbook;
 
+import amm.nerdbook.Classi.Gruppi;
+import amm.nerdbook.Classi.GruppiFactory;
 import amm.nerdbook.Classi.Utente;
 import amm.nerdbook.Classi.UtenteFactory;
 import amm.nerdbook.Classi.Post;
@@ -58,23 +60,31 @@ public class Profilo extends HttpServlet {
             }
 
             Utente utente = UtenteFactory.getInstance().getUtenteById(userID);
-            utente.setCognome(request.getParameter("cognome"));
-            utente.setPresentazione(request.getParameter("presentazione"));
+            if(!utente.isComplete()){
+                utente.setCognome(request.getParameter("cognome"));
+                utente.setPresentazione(request.getParameter("presentazione"));
+            }
             if (utente != null) {
+                List<Utente> amici = UtenteFactory.getInstance().getList();
+                List<Gruppi> gruppi = GruppiFactory.getInstance().getList();
+                List<Post> posts = PostFactory.getInstance().getPostList(utente);
 
                 request.setAttribute("utente", utente);
-                String attenzione = "ok";
-                String pagina = "profilo";
-                request.setAttribute("attenzione", attenzione);
-                request.setAttribute("pagina", pagina);
+                request.setAttribute("amici", amici);
+                request.setAttribute("gruppi", gruppi);
+                request.setAttribute("posts", posts);
 
-                request.getRequestDispatcher("bacheca.jsp").forward(request, response);
+                String pagina = "profilo";
+                request.setAttribute("pagina", pagina);
                 
+                request.getRequestDispatcher("bacheca.jsp").forward(request, response);
+
             } else {
                 response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             }
         } else {
             request.getRequestDispatcher("Login").forward(request, response);
+
         }
     }
 

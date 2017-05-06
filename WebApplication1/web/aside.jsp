@@ -7,10 +7,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <aside>
     <h1>Persone</h1>
-    <c:forEach var="user" items="${users}">
-        <a href="Bacheca">${user.getNome()}</a>
+    <c:forEach var="amico" items="${amici}">
+        <a href="Bacheca">${amico.getNome()}</a>
     </c:forEach>
     <h1 id="groups">Gruppi</h1>
-    <a href="">Mongolfieristi</a>
-    <a href="">Ritardatari</a>
+    <c:forEach var="gruppo" items="${gruppi}">
+        <a href="Bacheca">${gruppo.getNomeGruppo()}</a>
+    </c:forEach>
 </aside>
