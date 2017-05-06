@@ -34,9 +34,7 @@ public class Login extends HttpServlet {
         //(Utente già loggato)
         if (session.getAttribute("loggedIn") != null &&
             session.getAttribute("loggedIn").equals(true)) {
-            String pagina="pagina";
-            request.setAttribute("pagina",pagina);
-            request.getRequestDispatcher("bacheca.jsp").forward(request, response);
+            request.getRequestDispatcher("Bacheca").forward(request, response);
             return;
         
         //Se l'utente non è loggato...
