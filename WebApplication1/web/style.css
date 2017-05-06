@@ -1,0 +1,220 @@
+
+body{
+    background-color: #e6ffcc;
+    color: gray;
+    font-family: "Times New Roman" , arial, serif, santserif;
+}
+
+#title{
+    background-image: url("img/nerdy_logo.png");
+    background-repeat: no-repeat;
+    background-size: 54px;
+    background-position: left;
+    height: 54px;
+    padding-left: 54px;
+    font: "Times New Roman", Arial, sans-serif;
+}
+#testa{
+    width: 99%
+}
+header{
+    float: left;
+    width: 99%;
+}
+
+nav{
+    float: left;
+    border: solid;
+    border-color: white;
+    border-collapse: collapse;
+    width: 99%;
+}
+
+nav a{
+    float: right;
+    text-decoration: none;
+    font: 25px/30px "Times New Roman", Arial, sans-serif;
+    
+    padding-right: 25px;
+}
+nav a:hover{
+    background-color: #ffffe6;
+}
+.post{
+    border: solid;
+    border-color: white;
+    padding: 25px;
+}
+
+.stato{
+    background-color: #ffffe6;
+}
+label{
+    display: block;
+}
+input{
+    display: block;
+}
+input:focus{
+    display: block;
+    background-color: #ffffcc;
+}
+img{
+    display: block;
+}
+
+#Login{
+    position: absolute;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    top: 5%;
+    left: 25%;
+    border: solid;
+}
+@media only screen and (min-width: 1024px){
+
+#Titolo{
+    
+    border: solid;
+    border-color: white;
+    width: 20%;
+    float: left;
+}
+aside{
+    border: solid;
+    border-color: white;
+    padding: 5px;
+    float: left;
+    width: 20%;
+}
+aside a {
+    display: block;
+    padding-left: 25px;
+    background-image: url("prof.gif");
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-size: auto 100%;
+    text-decoration: none;
+    
+}
+#groups{
+    
+    background-image: url("boh.gif");
+    background-repeat: no-repeat;
+    background-position: right; 
+    background-size: auto 100%;
+}
+article{
+    float: left;
+    width: 75%;
+}
+.stato{
+    
+}
+.pImage{
+    margin-right: 20px;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+div{
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+header{
+    padding: 5px;
+    width: 100%;
+    float: left;
+}
+
+#Titolo{
+    
+    background-image: url("img/nerdy_logo.png");
+    background-repeat: no-repeat;
+    background-size: 54px;
+    background-position: left;
+    border: solid;
+    border-color: white;
+    width: 15%;
+    float: left;
+}
+
+nav a{
+    font-size: 15px;
+    float: right;
+    padding-right: 10px;
+}
+aside{   
+    border: solid;
+    border-color: white;
+    padding: 5px;
+    float: left;
+    width: 205px;
+}
+aside a {
+    display: block;
+    padding-left: 25px;
+    background-image: url("prof.gif");
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-size: auto 100%;
+    text-decoration: none;
+}
+#groups{
+    background-image: url("boh.gif");
+    background-repeat: no-repeat;
+    background-position: right; 
+    background-size: auto 100%;
+}
+article{
+    border: solid;
+    border-color: white;
+    float: left;
+    width: 60%;
+}
+.pImage{
+    margin-right: 20px;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+div{
+}    
+}
+@media only screen and (max-width: 480px){
+header{    
+    padding: 5px;
+}
+
+#Titolo{
+    border: solid;
+    border-color: white;
+}
+nav{    
+    border: solid;
+    border-color: white;
+    border-collapse: collapse;
+}
+
+nav a{
+    padding-left: 10px;
+}
+aside{
+    display: none;
+}
+article{
+    border: solid;
+    border-color: white;
+    float: left;
+    width: 100%;
+}
+.stato{}
+.pImage{
+    margin-right: 5px;
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+}
