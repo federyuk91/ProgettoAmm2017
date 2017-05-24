@@ -14,8 +14,7 @@ public class Post {
     };
 
     protected int id;
-    protected Utente
-            user;
+    protected Utente user;
     private String content;
     private Type postType;
 

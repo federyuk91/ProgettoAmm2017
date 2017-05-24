@@ -61,8 +61,11 @@ public class Profilo extends HttpServlet {
 
             Utente utente = UtenteFactory.getInstance().getUtenteById(userID);
             if(!utente.isComplete()){
+                utente.setNome(request.getParameter("nome"));
                 utente.setCognome(request.getParameter("cognome"));
                 utente.setPresentazione(request.getParameter("presentazione"));
+                utente.setEmail(request.getParameter("email"));
+                utente.setUrlFotoProfilo(request.getParameter("urlFotoProfilo"));
             }
             if (utente != null) {
                 List<Utente> amici = UtenteFactory.getInstance().getList();

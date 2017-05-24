@@ -8,8 +8,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <article>
-    <h2>Profilo di ${utente.nome}</h2>
-    Frase di presentazione: ${utente.presentazione}
+    <h2>${utente.nome} ${utente.cognome}:</h2>
+    <h3>${utente.presentazione}</h3>
     <img src="${utente.urlFotoProfilo}" alt ="Immagine del profilo">
     Altre info:
     <ol>

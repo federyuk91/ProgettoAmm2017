@@ -70,11 +70,11 @@ public class Bacheca extends HttpServlet {
                 request.setAttribute("gruppi",gruppi);
                 request.setAttribute("posts", posts);
                 
-                if (utente.isComplete()) {
-                    String pagina = "post";
+                if (!utente.isComplete()) {
+                    String pagina = "modifica";
                     request.setAttribute("pagina", pagina);
                 } else {
-                    String pagina = "modifica";
+                    String pagina = "post";
                     request.setAttribute("pagina", pagina);
                 }
                 request.getRequestDispatcher("bacheca.jsp").forward(request, response);

@@ -8,7 +8,7 @@
 <aside>
     <h1>Persone</h1>
     <c:forEach var="amico" items="${amici}">
-        <a href="Bacheca">${amico.getNome()}</a>
+        <a href="Bacheca"><img src="${amico.getUrlFotoProfilo()}">${amico.getNome()}</a>
     </c:forEach>
     <h1 id="groups">Gruppi</h1>
     <c:forEach var="gruppo" items="${gruppi}">

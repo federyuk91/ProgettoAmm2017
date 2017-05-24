@@ -22,8 +22,8 @@
         <!--Importa la sezione a margine della pagina-->
         <jsp:include page="aside.jsp"/>        
         
+        <!--Rimuovere i commenti per vedere questa stringa con il valore della pagina: ${pagina}-->
         <!--Importa il contenuto della pagina-->
-        il valore pagina è: ${pagina}<br/>
         <jsp:include page="${pagina}.jsp"/>        
         
 

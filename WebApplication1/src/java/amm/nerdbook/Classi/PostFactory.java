@@ -37,10 +37,10 @@ public class PostFactory {
         post2.setPostType(Post.Type.IMAGE);
 
         Post post3 = new Post();
-        post3.setContent("img/img001.jpg");
+        post3.setContent("Chiamami due, quaranta due!");
         post3.setId(2);
         post3.setUser(utenteFactory.getUtenteById(1));
-        post3.setPostType(Post.Type.IMAGE);
+        post3.setPostType(Post.Type.TEXT);
 
         Post post4 = new Post();
         post4.setContent("Essere o non essere questo è il dilemma");
@@ -79,5 +79,14 @@ public class PostFactory {
             }
         }
         return listaPost;
+    }
+    
+    private String connectionString;
+        public void setConnectionString(String s){
+    	this.connectionString = s;
+    }
+
+    public String getConnectionString(){
+    	return this.connectionString;
     }
 }

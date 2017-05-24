@@ -14,14 +14,25 @@ public class Utente {
     private String email;
     private String password;
     private String urlFotoProfilo;
+    private boolean status;
 
     public Utente() {
         id = -1;
-        nome = null;
-        cognome = null;
-        presentazione = null;
-        email = null;
-        password = null;
+        nome = "";
+        cognome = "";
+        presentazione = "";
+        email = "";
+        password = "";
+        status=true;
+        urlFotoProfilo="img/default.gif";
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     /**
@@ -117,18 +128,18 @@ public class Utente {
         this.urlFotoProfilo = urlFotoProfilo;
     }
     public boolean isComplete(){
-        if(this.nome==null){
+        if(this.nome==""){
             return false;
         }
-        if(this.cognome==null){
+        if(this.cognome==""){
             return false;
         }
-        if(this.presentazione==null){
+        if(this.presentazione==""){
             return false;
         }
-        if(this.urlFotoProfilo==null){
+        if(this.urlFotoProfilo=="img/default.gif"){
             return false;
         }
-        return true;
+        return this.status;
     }
 }

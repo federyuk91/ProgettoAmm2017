@@ -8,7 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <article>
-    <h1>Bacheca di : ${utente.nome}  sei in ${pagina}</h1>
+    <h1>Tutti i ${pagina} di ${utente.nome} ${utente.cognome}</h1>
     <c:forEach var="post" items="${posts}">
         <div class="post">
             <c:if test="${post.postType == 'TEXT'}">

@@ -9,6 +9,7 @@
     <a href="Login?logout=1">Logout</a>
     <a href="Bacheca">Bacheca</a>
     <a href="Profilo">Profilo</a>
-
     <a href="Profilo"><img src="${utente.urlFotoProfilo}" width="50" height="50" alt="img"/></a>
+    
+    
 </nav>
